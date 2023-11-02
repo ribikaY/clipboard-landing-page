@@ -1,0 +1,13 @@
+//base
+@import "./base/base";
+@import "./base/breakpoints";
+@import "./base/variables";
+
+//components
+@import "./components/button";
+@import "./components/text";
+@import "./components/title";
+@import "./components/footer";
+
+//pages
+@import "./pages/home";

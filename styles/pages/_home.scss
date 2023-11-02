@@ -1,0 +1,127 @@
+main{
+    .header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header-image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+        }
+
+        &-content{
+            margin-top: 120px;
+            text-align: center;
+            .logo-image{
+                margin-bottom: 4rem;
+            }
+
+            .title{
+                padding-bottom:1.3rem ;
+            }
+
+        }
+        
+    }
+
+    .download-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+
+    .image{
+        display: inline-block;
+        width: 100%;
+        margin-top:4rem;
+    }
+
+    .features{
+        margin-top: 120px;
+
+        .title{
+            margin-bottom: 1.1rem;
+        }
+
+        .image{
+            height: 240px;
+            margin-bottom: 3.5rem;
+        }
+
+        .feature{
+            margin-bottom: 3rem;
+        }
+    }
+
+    .access{
+        margin-top: 180px;
+
+        .image{
+            height: 195px;
+            margin-bottom: 6rem;
+        }
+    }
+
+    .services{
+  
+        .service{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .image{
+               margin-bottom: 3.5rem;
+            }
+
+            .title{
+                margin-bottom: 1.5rem;
+            }
+
+            &:first-of-type{
+                margin-top: 2.5rem;
+
+                .image{
+                    width: 44px;
+                    height: 40px;
+                }
+            }
+
+            &:nth-of-type(2){
+
+                .image{
+                    width: 36px;
+                    height: 32px;
+                }
+            }
+
+            &:last-of-type{
+                
+                .image{
+                    width: 50px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+    .brands{
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .brand-image{
+            margin-bottom:4rem;
+        }
+    }
+
+    .download{
+        margin-top: 5.5rem;
+    }
+}

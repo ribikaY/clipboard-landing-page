@@ -1,0 +1,39 @@
+.footer{
+    background: #f5f6f8;
+    width: 100%;
+    margin-top: 8rem;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo{
+        width: 58px;
+        height: 58px;
+    }
+
+    ul{
+        margin: 2.7rem 0 1.8rem 0;
+        li{
+            list-style: none;
+            text-align: center;
+            color:$title-color;
+            font-size: $text-size;
+            margin-bottom: 1.7rem;
+
+            &:hover{
+                transition: .3s;
+                cursor: pointer;
+                color:$primary-cyan;
+            }
+        }
+    }
+
+    .icon{
+        margin: 0 1.3rem;
+        &:hover{
+            // fill:red;
+            // background: red;
+        }
+    }
+}
