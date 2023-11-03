@@ -17,7 +17,7 @@ This is a solution to the Clipboard landing page challenge on Frontend Mentor de
 
 ### Screenshot
 
-![](./public/images/desktop-preview.png)
+![](./public/image/desktop-preview.jpg)
 
 
 ### Links
