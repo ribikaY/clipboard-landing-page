@@ -3,4 +3,12 @@
     line-height: 1.7rem;
     font-size: 16px;
     text-align: center;
+
+    @include respond(tab-land){
+        font-size: 18px;
+        line-height: 1.9rem;
+        &.subtext{
+            font-size: 16px;
+        }
+    }
 }

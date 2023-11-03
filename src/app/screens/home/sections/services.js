@@ -12,15 +12,19 @@ const Services = () => {
         {title:"Sneak preview", text:"Quick preview of all snippets on your Clipboard for easy access.", img:previewImg, alt:"preview"},
     ]
     return (
-        <div className="services">
-            <Title title="Supercharge your workflow" classname="subtitle"/>
-            <Text text="We've got the tools to boost your productivity."/>
-            {
-                services && services.map(service => (
-                    <Service key={service.alt} title={service.title} text={service.text} image={service.img} alt={service.alt}/>
-                  )
-                )
-            }
+        <div className="services responsive-spacing">
+            <div className="services-header">
+                <Title title="Supercharge your workflow" classname="subtitle"/>
+                <Text text="We've got the tools to boost your productivity."/>
+            </div>
+            <div className="service-container">    
+                {
+                    services && services.map(service => (
+                        <Service key={service.alt} title={service.title} text={service.text} image={service.img} alt={service.alt}/>
+                    )
+                    )
+                }
+            </div>
         </div>
     )
 }

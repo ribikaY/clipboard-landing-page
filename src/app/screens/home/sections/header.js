@@ -9,13 +9,13 @@ import DownloadButtons from "../components/downloadButtons";
 const Header = () => {
     return (
         <div className="header">
-            {/* <Image
+            <Image
                 src={desktopBg}
                 width="100%"
                 height="auto"
                 alt="Desktop Background"
                 className="header-image desktop"
-            /> */}
+            />
 
             <Image
                 src={mobileBg}
@@ -40,10 +40,6 @@ const Header = () => {
                 <DownloadButtons/>
             </div>
 
-            {/* logo
-            title
-            text
-            download buttons */}
         </div>
     )
 }

@@ -14,7 +14,7 @@ const Brands = () => {
         {img:vgLogo, alt:"Vector Graphics"},
     ]
     return (
-        <div className="brands">
+        <div className="brands responsive-spacing">
             {
               brands && brands.map(brand => (
                 <Image

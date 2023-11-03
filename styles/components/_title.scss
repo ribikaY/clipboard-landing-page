@@ -15,4 +15,17 @@
         line-height: 1.2rem;
         margin-bottom: 1rem;
     }
+
+    @include respond(tab-land){
+        font-size: 45px;
+
+        &.subtitle{
+            font-size: 36px;
+            margin-bottom:1.6rem;
+        }
+
+        &.small-title{
+            // font-size: 25px;
+        }
+    }
 }

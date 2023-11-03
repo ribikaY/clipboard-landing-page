@@ -7,8 +7,10 @@ const { default: Title } = require("@/app/components/title")
 const Access = () => {
     return(
         <div className="access"> 
-            <Title title="Access Clipboard Anywhere" classname="subtitle"/>
-            <Text text="Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."/>
+            <div className="access-header">
+                <Title title="Access Clipboard anywhere" classname="subtitle"/>
+                <Text text="Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."/>
+            </div>
             <Image
                src={devicesImg}
                width="auto"

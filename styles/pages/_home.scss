@@ -6,11 +6,19 @@ main{
         justify-content: center;
         align-items: center;
 
-        .header-image{
+        &-image{
             position: absolute;
             top: 0;
             left: 0;
             width:100%;
+
+            &.desktop{
+                display: none;
+             }
+ 
+             &.mobile{
+                 display: block;
+             }
         }
 
         &-content{
@@ -41,11 +49,8 @@ main{
     }
 
     .features{
-        margin-top: 120px;
-
-        .title{
-            margin-bottom: 1.1rem;
-        }
+        width: 83%;
+        margin: 120px auto auto auto;
 
         .image{
             height: 240px;
@@ -60,14 +65,14 @@ main{
     .access{
         margin-top: 180px;
 
-        .image{
+        .image{ 
             height: 195px;
             margin-bottom: 6rem;
         }
     }
 
     .services{
-  
+        
         .service{
             display: flex;
             flex-direction: column;
@@ -75,6 +80,7 @@ main{
             justify-content: center;
 
             .image{
+                width: auto;
                margin-bottom: 3.5rem;
             }
 
@@ -82,9 +88,9 @@ main{
                 margin-bottom: 1.5rem;
             }
 
+
             &:first-of-type{
                 margin-top: 2.5rem;
-
                 .image{
                     width: 44px;
                     height: 40px;
@@ -124,4 +130,171 @@ main{
     .download{
         margin-top: 5.5rem;
     }
+
+    @include respond(tab-land){
+        .header{
+            &-image{
+                &.desktop{
+                   display: block;
+                }
+    
+                &.mobile{
+                    display: none;
+                }
+            }
+
+            &-content{
+                width:705px;
+
+                .title{
+                    margin-bottom: 0.4rem;
+                }
+
+               .text{
+                 font-size: 20px;
+               }
+            }
+        }
+
+        .download-buttons{
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 3rem;
+
+            .button{
+                margin: auto 0.5rem;
+                width: 223px;
+            }
+        }
+
+        .features, .access, .services{
+            &-header{
+                width:705px;
+                margin: auto;
+            }
+        }
+
+        .features{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            margin-top: 160px;
+            .image{
+                width: 652px;
+                height: 472px;
+            }
+        }
+
+        .access{
+    
+            .image{
+                margin-top: 6rem;
+                width: 905px;
+                height: 575px;
+                position: relative;
+                transform: translateX(-50%);
+                left:50%
+            }
+        }
+
+        .services{
+            
+            .service-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .service{
+                    width: 30%;
+                    
+                    .text{
+                        height: 90px;
+                    }
+
+                    .image{
+                        margin-top: 5rem;
+                    }
+
+                    
+                    &:first-of-type{
+                        margin-top: 0;
+                    }
+                }
+
+            }
+        }
+        
+
+        .brands{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .download{
+            width: 705px;
+            margin: auto;
+            margin-top: 7.5rem;
+        }
+
+        .responsive-spacing{
+            margin-left:auto ;
+            margin-right:auto ;
+        }
+    }
+
+    @include respond(desktop){
+        .responsive-spacing{
+            width: 1135px;
+        }
+
+        .brands{
+            margin-top: 160px;
+            background: red($color: #000000);
+        }
+
+        .access{
+            margin-top: 110px;
+        }
+
+        .features{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+            
+            &-content{  
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                .image{
+                    width: 752px;
+                    height: 572px;
+                    position: relative;
+                    right:30px;
+                    margin-top: 5rem;
+                }
+
+                .feature-container{
+                    margin-left: 6rem;
+                    width:351px;
+                    padding-top: 2.5rem;
+
+                    .feature{
+                        margin-bottom: 4rem;
+
+                        .small-title, .text{
+                            text-align: left;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
 }
+

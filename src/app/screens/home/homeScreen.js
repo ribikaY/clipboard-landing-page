@@ -10,8 +10,8 @@ const HomeScreen = () => {
     return (
         <main>
            <Header/>
+            <Features/>
            <div className="spacing">
-                <Features/>
                 <Access/>
                 <Services/>
                 <Brands/>

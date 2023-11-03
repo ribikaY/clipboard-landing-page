@@ -16,7 +16,7 @@ const Service = ({title, text, image, alt}) => {
                 />
             }
             <Title title={title} classname="small-title"/>
-            <Text text={text}/>
+            <Text text={text} classname="subtext"/>
         </div>
     )
 }
